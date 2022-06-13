@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <span>Generate a</span> <br>
+        <span class="green">random password</span>
+        <p>Never use an insecure password again.</p>
+        <form>
+            <label>Password length:</label>
+            <input type="number" max="16" min="10" onblur="getLength(event)">
+        </form>
+        <button id="gen_pass" onclick="genPassword(event)">Generate passwords</button>
+        <hr>
+        <span id="pass_1" class="passwords"></span> <span id="pass_2" class="passwords"></span>
+    </body>
+    <script src="script.js"></script>
+</html>
